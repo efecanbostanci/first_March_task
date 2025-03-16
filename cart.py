@@ -20,4 +20,4 @@ class Cart:
             print(f"{item['product'].name} - {item['quantity']} adet - {item['product'].price * item['quantity']} TL")
     
     def get_total(self):
-        return sum(item['product'].price * item['quantity'] for item in self.items.values)
+        return sum(item['product'].price * item['quantity'] for item in self.items.values())
